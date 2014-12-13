@@ -37,12 +37,12 @@ START="$(date +%Y-%m-%d-%T)"
 # 1. Check access
 # Check if utilities are usable by current user
 if ! ping 127.0.0.1 -c 1 &>/dev/null ; then
-	echo "Utilita PING ne rabotet! Poprobuite zapustit s pravami 'root'"
+	echo "Utilita PING ne rabotaet! Poprobuite zapustit s pravami 'root'"
 	UPASS=1
 fi
 
 if ! traceroute -n 127.0.0.1 &>/dev/null ; then
-	echo "Utilita TRACEROUTE ne rabotet! Poprobuite zapustit s pravami 'root'"
+	echo "Utilita TRACEROUTE ne rabotaet! Poprobuite zapustit s pravami 'root'"
 	UPASS=1
 fi
 
